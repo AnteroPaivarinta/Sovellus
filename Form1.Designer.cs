@@ -1,4 +1,6 @@
 ﻿
+using System;
+
 namespace Sovellus
 {
     partial class CloudProject
@@ -27,6 +29,7 @@ namespace Sovellus
         ///  Required method for Designer support - do not modify
         ///  the contents of this method with the code editor.
         /// </summary>
+        /// pr
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CloudProject));
@@ -51,7 +54,7 @@ namespace Sovellus
             this.Add.TabIndex = 0;
             this.Add.Text = "Add";
             this.Add.UseVisualStyleBackColor = false;
-            this.Add.Click += new System.EventHandler(this.button1_Click);
+            this.Add.Click += new System.EventHandler(button1Click);
             // 
             // Delete
             // 
@@ -156,6 +159,11 @@ namespace Sovellus
             this.ResumeLayout(false);
             this.PerformLayout();
 
+        }
+        protected void button1Click(object sender, EventArgs e)
+        {
+            Console.WriteLine("joo");
+            this.Add.Text = "HALOO";
         }
 
         #endregion
